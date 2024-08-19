@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Desktop Navigation -->
     <nav id="desktop-nav">
       <div class="logo">krishnakamalbaishnab</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Expericence</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Hamburger Navigation -->
     <nav id="hamburger-nav">
       <div class="logo">krishnakamalbaishnab</div>
-      <div class="hambuger-menu">
+      <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -29,15 +31,21 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Expericence</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe Profile Picture" />
+        <img
+          src="./assets/ppp.png"
+          alt="Krishna Kamal Baishnab Profile Picture"
+          class="profile-pic"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -52,14 +60,14 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My linkedIn Profile"
+            alt="My LinkedIn Profile"
             class="icon"
             onclick="location.href='https://uk.linkedin.com/'"
           />
@@ -72,14 +80,16 @@
         </div>
       </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
-            alt="Profile Picture"
+            src="./assets/Aboutpic.jpg"
+            alt="About Picture"
             class="about-pic"
           />
         </div>
@@ -92,7 +102,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>1+ Years <br />Software Engineer</p>
+              <p>1.5+ Years <br />Software Engineer</p>
             </div>
             <div class="details-container">
               <img
@@ -110,6 +120,7 @@
         </div>
       </div>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>

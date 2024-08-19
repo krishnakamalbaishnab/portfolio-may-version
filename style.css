@@ -176,6 +176,35 @@ section{
     margin: auto 0;
 }
 
+.section__pic-container {
+    width: 400px; /* Set explicit container width */
+    height: 400px; /* Set explicit container height */
+    border-radius: auto; /* Ensures the container is circular */
+    overflow: hidden; /* Ensures no overflow */
+    display: flex; /* Centers the image inside */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.section__pic-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+
+.profile-pic-container img.profile-pic {
+    border-radius: 50%;
+    width: 100%; /* Ensures the image takes up the container size */
+    height: auto; /* Ensures the image takes up the container size */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio while fitting the container */
+    object-position: 50% 30%; /* Adjust this to move the image around inside the container */  
+
+    
+}
+
 .section__text{
     align-self: center;
     text-align: center;
